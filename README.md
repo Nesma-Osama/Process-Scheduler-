@@ -21,7 +21,7 @@ Process scheduling is allocating resources to different processes so that they c
 * Round Rhobin            (RR)   :  The Running process is assigned a fixed  time slice to execute part of the process
 
 ```
-### Operations on process
+### The operations on process
 ```
 * Process migration : Processes can migrate for one processor to another based on
                     - RR process should migrate to a SJF queue if the process has a remaining time to finish less than RTF
@@ -54,5 +54,15 @@ Here are two photos show some calculated statistics
   <img src="https://github.com/Nesma-Osama/Process-Scheduler-/assets/128908402/45864ef0-43d1-44c7-8c29-d3e540b79a3e" width=400/ height="300">
   <img src="https://github.com/Nesma-Osama/Process-Scheduler-/assets/128908402/6bfc893c-94c7-4211-ba21-aa45723a78f0"width="400" height="300"/>
 </div>
+### Program interface
 
-
+```
+* Interactive Mode  : when the user press "Enter" key it displays the output of the next time
+* Step-By-Step Mode : The program waits for one second than displays the output
+* Silent Mode       : The program produces an output file
+```
+### Pictures 
+<div>
+  <img src="https://github.com/Nesma-Osama/Process-Scheduler-/assets/128908402/929e3a1b-8429-4142-a99f-417c7f189009" width="400" height="300"/>
+  <img src="https://github.com/Nesma-Osama/Process-Scheduler-/assets/128908402/c9dd8888-3348-4bd1-90e4-21fb62e63b42" width="400" height="300"/>
+</div>
