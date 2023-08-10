@@ -51,8 +51,8 @@ there are some other statistics be calculated in this project
 ```
 Here are two photos show some calculated statistics
 <div>
-  <img src="https://github.com/Nesma-Osama/Process-Scheduler-/assets/128908402/45864ef0-43d1-44c7-8c29-d3e540b79a3e" width=400/ height="300">
-  <img src="https://github.com/Nesma-Osama/Process-Scheduler-/assets/128908402/6bfc893c-94c7-4211-ba21-aa45723a78f0"width="400" height="300"/>
+  <img src="https://github.com/Nesma-Osama/Process-Scheduler-/assets/128908402/5e2ddd85-7e91-4240-a5bb-2dcde876296f" width=400/ height="300">
+  <img src="https://github.com/Nesma-Osama/Process-Scheduler-/assets/128908402/1330bae1-bdd5-4562-89f0-5cdaf8c8509d"width="400" height="300"/>
 </div>
 ### Program interface
 
@@ -63,6 +63,7 @@ Here are two photos show some calculated statistics
 ```
 ### Pictures 
 <div>
-  <img src="https://github.com/Nesma-Osama/Process-Scheduler-/assets/128908402/929e3a1b-8429-4142-a99f-417c7f189009" width="400" height="300"/>
-  <img src="https://github.com/Nesma-Osama/Process-Scheduler-/assets/128908402/c9dd8888-3348-4bd1-90e4-21fb62e63b42" width="400" height="300"/>
+  <img src="https://github.com/Nesma-Osama/Process-Scheduler-/assets/128908402/e3ff9189-84f3-4cd1-bea0-d3bde49ce436" width="400" height="300"/>
+  <img src="https://github.com/Nesma-Osama/Process-Scheduler-/assets/128908402/2b6f3782-fa9a-4667-8171-4099e241df0c)" width="400" height="300"/>
+
 </div>
