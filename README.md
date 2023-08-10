@@ -1,5 +1,5 @@
 # Process-Scheduler
-## This project is a Data Structure project 
+## This project is a Data Structures project 
 ### Explanation of the project
 Process scheduling is allocating resources to different processes so that they can be completed in an efficient manner. The main objectives of scheduling are to keep the CPU busy as possible and minimize response time and waiting time for processes being scheduled.
 
