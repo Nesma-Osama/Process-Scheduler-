@@ -7,7 +7,7 @@ Process scheduling is allocating resources to different processes so that they c
 ```
 1-NEW : A process that has been created but not arrived yet
 2-RDY : A process that has arrived and was moved to ready queue
-3-RUN : A process being served bu CPU
+3-RUN : A process being served by CPU
 4-BLK : A process asked a I/O    
 5-TRM : A process that has finished execution   
 ```
