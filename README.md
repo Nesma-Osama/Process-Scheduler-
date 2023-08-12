@@ -13,7 +13,7 @@ Process scheduling is allocating resources to different processes so that they c
 ```
 
 
-### The type of processors  
+### The type of processors  and its Algorithm
 
 ```
 * First Come First Serve  (FCFS) : The process that requests CPU first is allocated the CPU first
@@ -23,7 +23,7 @@ Process scheduling is allocating resources to different processes so that they c
 ```
 ### The operations on process
 ```
-* Process migration : Processes can migrate for one processor to another based on
+* Process migration : Processes can migrate for one processor to another based on :
                     - RR process should migrate to a SJF queue if the process has a remaining time to finish less than RTF
                     - FCFS process should migrate to a RR queue if the process total waiting time is greater than MaxW
 
