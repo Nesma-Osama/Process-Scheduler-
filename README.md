@@ -34,7 +34,8 @@ Process scheduling is allocating resources to different processes so that they c
 
 * Process forking   : (applicable for FCFS only) A process can fork another process the forking process is the parent and forked one is the child
                     - The processor asks the scheduler to create a new process .The scheduler should create it and add it to the shortest RDY queue of FCFS processors only
-* Orphan process    : If the parent process terminates before its child process the child process and all grandchildren are considered as [ORPHAN] must be killed immediately and moved to TRM list
+* Orphan process    : If the parent process terminates before its child process the child process and all grandchildren are considered as [ORPHAN] must be killed immediately and moved to TRM 
+
 * Processor Overhead: A processor may go out of service due to overheading in this state :
                       - Processor should be but in STOP state for n time step (n loaded from the input file)
                       - The process being executed by that processor should be moved to the shortest RDY queue
@@ -73,15 +74,17 @@ Here are two photos show some calculated statistics
  - NR :number of RR processors
 2- Then a line with one number represents the time slice for RR
 3- Then a line for four integers :RTF,MaxW,Stl and the Fork probability
-4- The a number represents the number of processes
-5- The the input file contains M lines (one line for each process) sorted by arrival time in ascending order.each line has the following information:
+4- overheatProbability and overheatConst for overhead;
+
+5- The a number represents the number of processes
+6- The the input file contains M lines (one line for each process) sorted by arrival time in ascending order.each line has the following information:
  - AT :Arrival time
  - PID:Process ID
  - CT :CPU time
  -N: Number of the time process requests I/O the I/O pair (IO_R,IO_D) :
     -  IO_R :For when the process requests the I/O
     -  IO_D :For the time process will be in the BLK queue
- 6- The remaining lines for the Kill Signal  :
+ 7- The remaining lines for the Kill Signal  :
   - PID :For the process we want to kill
   - T   :The time we whant to kill this process  
 
