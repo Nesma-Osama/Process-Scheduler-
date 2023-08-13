@@ -7,9 +7,9 @@ Process scheduling is allocating resources to different processes so that they c
 ### Process States
 ```
 1-NEW : A process that has been created but not arrived yet
-2-RDY : A process that has arrived and was moved to ready queue
+2-RDY : A process that has arrived and was moved to the ready queue
 3-RUN : A process being served by CPU
-4-BLK : A process asked a I/O    
+4-BLK : A process asked a I/O request 
 5-TRM : A process that has finished execution   
 ```
 
@@ -18,23 +18,23 @@ Process scheduling is allocating resources to different processes so that they c
 
 ```
 * First Come First Serve  (FCFS) : The process that requests CPU first is allocated the CPU first
-* Shortest Job First      (SJF)  :  Selects the waiting process with the smallest remaining CPU time to exceute next
+* Shortest Job First      (SJF)  :  Selects the waiting process with the smallest remaining CPU time to execute next
 * Round Rhobin            (RR)   :  The Running process is assigned a fixed  time slice to execute part of the process
 
 ```
 ### The Operations on Process
 ```
-* Process migration : Processes can migrate for one processor to another based on :
+* Process migration : Processes can migrate form one processor to another based on :
                     - RR process should migrate to a SJF queue if the process has a remaining time to finish less than RTF
                     - FCFS process should migrate to a RR queue if the process total waiting time is greater than MaxW
 
-* Work stealing     : The shortest queue steals one or more process from the longest queue to help  balance load 
+* Work stealing     : The shortest queue steals one or more processes  from the longest queue to help  balance load 
     
 * killing a process : (applicable for FCFS only) A process should be killed if it receives a kill signal
 
-* Process forking   : (applicable for FCFS only) A process can fork another process the forking process is the parent and forked one is the child
+* Process forking   : (applicable for FCFS only) A process can fork another process the forking process is the parent and the forked one is the child
                     - The processor asks the scheduler to create a new process .The scheduler should create it and add it to the shortest RDY queue of FCFS processors only
-* Orphan process    : If the parent process terminates before its child process the child process and all grandchildren are considered as [ORPHAN] must be killed immediately and moved to TRM 
+* Orphan process    : If the parent process terminates before its child process the child process and all grandchildren are considered as [ORPHAN] and must be killed immediately and moved to TRM 
 
 * Processor Overhead: A processor may go out of service due to overheading in this state :
                       - Processor should be but in STOP state for n time step (n loaded from the input file)
@@ -45,7 +45,7 @@ Process scheduling is allocating resources to different processes so that they c
 This project simulates the operation of the process scheduler in a multiprocessor system and calculates  some related statistics like:
 ```
 1-Arrival Time        : The time when the process is ready to be scheduled
-2-Response Time       : The difference between the arival time and the time at which the process gets CPU for the first time  
+2-Response Time       : The difference between the arrival  time and the time at which the process gets CPU for the first time  
 3-CPU Time            : The total time needed to run the process
 4-Termination Time    : Time when the process finishes execution
 5-Turnaround duration : Total  time a process spends in the system
@@ -62,8 +62,8 @@ Here are two photos show some calculated statistics
 ### Program Interface
 
 ```
-* Interactive Mode  : when the user press "Enter" key it displays the output of the next time
-* Step-By-Step Mode : The program waits for one second than displays the output
+* Interactive Mode  : when the user press the "Enter" key it displays the output of the next time
+* Step-By-Step Mode : The program waits for one second then displays the output
 * Silent Mode       : The program produces an output file
 ```
 ### Input File
