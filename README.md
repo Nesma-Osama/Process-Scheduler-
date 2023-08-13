@@ -35,6 +35,9 @@ Process scheduling is allocating resources to different processes so that they c
 * Process forking   : (applicable for FCFS only) A process can fork another process the forking process is the parent and forked one is the child
                     - The processor asks the scheduler to create a new process .The scheduler should create it and add it to the shortest RDY queue of FCFS processors only
 * Orphan process    : If the parent process terminates before its child process the child process and all grandchildren are considered as [ORPHAN] must be killed immediately and moved to TRM list
+* Processor Overhead: A processor may go out of service due to overheading in this state :
+                      - Processor should be but in STOP state for n time step (n loaded from the input file)
+                      - The process being executed by that processor should be moved to the shortest RDY queue
 ```
 
 ### Statistics
