@@ -1,9 +1,10 @@
 # Process-Scheduler
-## This project is a Data Structures project 
-### Explanation of the project
+## Explanation of the project
+###Introduction
+
 Process scheduling is allocating resources to different processes so that they can be completed in an efficient manner. The main objectives of scheduling are to keep the CPU busy as possible and minimize response time and waiting time for processes being scheduled.
 
-### Process states
+### Process States
 ```
 1-NEW : A process that has been created but not arrived yet
 2-RDY : A process that has arrived and was moved to ready queue
@@ -13,7 +14,7 @@ Process scheduling is allocating resources to different processes so that they c
 ```
 
 
-### The type of processors  and its Algorithm
+### The Type of Processors and Its Algorithm
 
 ```
 * First Come First Serve  (FCFS) : The process that requests CPU first is allocated the CPU first
@@ -21,7 +22,7 @@ Process scheduling is allocating resources to different processes so that they c
 * Round Rhobin            (RR)   :  The Running process is assigned a fixed  time slice to execute part of the process
 
 ```
-### The operations on process
+### The Operations on Process
 ```
 * Process migration : Processes can migrate for one processor to another based on :
                     - RR process should migrate to a SJF queue if the process has a remaining time to finish less than RTF
@@ -54,12 +55,40 @@ Here are two photos show some calculated statistics
   <img src="https://github.com/Nesma-Osama/Process-Scheduler-/assets/128908402/5e2ddd85-7e91-4240-a5bb-2dcde876296f" width=400/ height="300">
   <img src="https://github.com/Nesma-Osama/Process-Scheduler-/assets/128908402/1330bae1-bdd5-4562-89f0-5cdaf8c8509d"width="400" height="300"/>
 </div>
-### Program interface
+### Program Interface
 
 ```
 * Interactive Mode  : when the user press "Enter" key it displays the output of the next time
 * Step-By-Step Mode : The program waits for one second than displays the output
 * Silent Mode       : The program produces an output file
+```
+### Input File
+```
+1- First line contains three integers .Each integer represents the number of processors of each scheduling algorithm :
+ - NF :number of FCFS processors
+ - NS :number of SJF processors
+ - NR :number of RR processors
+2- Then a line with one number represents the time slice for RR
+3- Then a line for four integers :RTF,MaxW,Stl and the Fork probability
+4- The a number represents the number of processes
+5- The the input file contains M lines (one line for each process) sorted by arrival time in ascending order.each line has the following information:
+ - AT :Arrival time
+ - PID:Process ID
+ - CT :CPU time
+ -N: Number of the time process requests I/O the I/O pair (IO_R,IO_D) :
+    -  IO_R :For when the process requests the I/O
+    -  IO_D :For the time process will be in the BLK queue
+ 6- The remaining lines for the Kill Signal  :
+  - PID :For the process we want to kill
+  - T   :The time we whant to kill this process  
+
+```
+## How use the program
+```
+1-Make the input file  
+2-Run the program
+3-press the number of the Mode you what
+4-check the output 
 ```
 ### Pictures 
 <div>
